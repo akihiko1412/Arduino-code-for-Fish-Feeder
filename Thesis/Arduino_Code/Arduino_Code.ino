@@ -190,19 +190,6 @@ void loop() {
     }
 } 
     
-String formatTime(int hour, int minute, int second, bool isPM) {
-    char timeBuffer[15];
-    sprintf(timeBuffer, "%02d:%02d:%02d%s", hour % 12, minute, second, isPM ? "PM" : "AM");
-    return String(timeBuffer);
-}
-bool compareUID(byte* array1, byte* array2, byte size) {
-    for (byte i = 0; i < size; i++) {
-        if (array1[i] != array2[i]) {
-            return false;
-        }
-    }
-    return true;
-}
 void handleSerialInput(float temperature) {
     while (Serial.available()) {
         String bluetooth = String(Serial.read());
