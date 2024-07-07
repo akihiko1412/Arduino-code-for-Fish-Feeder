@@ -11,8 +11,6 @@
 #define MANUAL_MODE 1
 #define TESTING_MODE 2
 
-#define SDA_PIN 10
-#define RST_PIN 3
 #define DS18B20WP_PIN_DQ 6
 #define BUTTON_PIN 7
 #define BUZZER_PIN 8
